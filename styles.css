@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 50% black */
+    z-index: 1;
+  }
+  
+  #app {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+  }  
+  
+  .slide {
+    min-width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray transparent;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+  }
+
+  .question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.question-box {
+    background-color: #a9a9a9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px; /* Make the question box smaller */
+    text-align: center;
+}
+  
+  .slide h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input, button {
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    background-color: #4a63e7;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3a4bc4;
+  }
+  
